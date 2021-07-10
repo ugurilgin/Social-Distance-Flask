@@ -13,12 +13,13 @@ $(function() {
 
     $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
+        var baseurl=window.location.origin;
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src","static/assets/images/logo-2.png");
+            $(".navbar-area img").attr("src",baseurl+"/static/assets/images/logo-2.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar-area img").attr("src","static/assets/images/logo.png");
+            $(".navbar-area img").attr("src",baseurl+"/static/assets/images/logo.png");
         }
     });
 
