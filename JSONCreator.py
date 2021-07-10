@@ -1,8 +1,8 @@
 import json
 mobese={}
-mobese['SultanBeyli']={
+mobese['Sultanbeyli']={
 'id':'1',
-'name':'SultanBeyli',
+'name':'Sultanbeyli',
 'link':'https://livestream.ibb.gov.tr/cam_sehir/cam_sultanbeyli_meydan.stream/playlist.m3u8',
 'img':'#'
 }
@@ -15,25 +15,25 @@ mobese['Esenler']={
 }
 mobese['Uskudar']={
 'id':'3',
-'name':'Uskudar',
+'name':'Üsküdar',
 'link':'https://livestream.ibb.gov.tr/cam_sehir/cam_uskudar.stream/playlist.m3u8',
 'img':'#'
 }
-mobese['ZeytinBurnu']={
+mobese['Zeytinburnu']={
 'id':'4',
-'name':'ZeytinBurnu',
+'name':'Zeytinburnu',
 'link':'https://livestream.ibb.gov.tr/cam_sehir/cam_uskudar.stream/playlist.m3u8',
 'img':'#'
 }
-mobese['KucukCekmece']={
+mobese['Kucukcekmece']={
 'id':'5',
-'name':'Kucuk Cekmece',
+'name':'Küçükçekmece',
 'link':'https://livestream.ibb.gov.tr/cam_sehir/cam_kucukcekmece.stream/playlist.m3u8',
 'img':'#'
 }
 mobese['Ortakoy']={
 'id':'6',
-'name':'Ortakoy',
+'name':'Ortaköy',
 'link':'https://livestream.ibb.gov.tr/cam_sehir/cam_ortakoy.stream/playlist.m3u8',
 'img':'#'
 }

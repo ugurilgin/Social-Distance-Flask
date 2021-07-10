@@ -1,0 +1,93 @@
+
+{% extends "base.html" %}
+{% block title %} - Home Page {% endblock %}
+{% block content %}
+   
+    <!--====== SLIDER PART START ======-->
+
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide" data-ride="carousel">
+            
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Social Distance Detection</h1>
+                                    <p class="text">Check social distancing in istanbul with mobese cameras .</p>
+                                    
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+                            <img src="{{ url_for('static', filename='assets/images/slider/2.png') }} "  alt="Hero">
+                        </div> 
+                    </div> 
+                </div> 
+            
+            </div>
+
+           
+        </div>
+    </section>
+
+    <!--====== SLIDER PART ENDS ======-->
+    
+    <!--====== FEATRES TWO PART START ======-->
+
+    <section id="services" class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">Coronavirus</h3>
+                        <p class="text">Protect Yourself And Loved Ones From Coronavirus </p>
+                    </div> 
+                </div>
+            </div> 
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Wash Your Hands</a></h4>
+							<img class="shape" width=50% height=50% src="{{ url_for('static', filename='assets/images/coronavirus/wash.png') }} "  alt="Shape">
+                       
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Wash your hands frequently with soup, scrubbing for at least 20 seconds   .</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Wear Mask</a></h4>
+                            <img class="shape" width=50% height=50% src="{{ url_for('static', filename='assets/images/coronavirus/mask.png') }} " alt="Shape">
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Wear non medical face coverings where social distancing is not possible</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Keep Your Distance</a></h4>
+                            <img class="shape" width=50% height=50% src="{{ url_for('static', filename='assets/images/coronavirus/distance.png') }} " alt="Shape">
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Keep 6 feet away from others wherever possible and respects other's space. </p>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </div> 
+    </section>
+
+    <!--====== FEATRES TWO PART ENDS ======-->
+    
+    {% endblock %}
