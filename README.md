@@ -1,8 +1,9 @@
 # Social-Distance-Flask
+
+* I used yolov3-tiny.weight to deploy to Heroku. If you change yolov3-tiny.weight to yolov3.weight and  use Nvidia GPU  you can get more accurate results
 * ![logo](/SS/1.png)
-I used yolov3-tiny.weight to deploy to Heroku. If you change yolov3-tiny.weight to yolov3.weight and  use Nvidia GPU  you can get more accurate results
-Social Distance Detection
-Check social distancing in istanbul with mobese cameras
+* Social Distance Detection
+* Check social distancing in istanbul with mobese cameras
 * ![logo](/SS/4.png)
 ## Used Technologies
 * 1-) Flask
