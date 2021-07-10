@@ -63,6 +63,6 @@ def streamVideo(video):
 def page_not_found(e):
     return redirect(url_for('index'))
 if __name__ == '__main__':
-    PORT = int(os.environ.get('PORT', 5000))
+    PORT = int(os.environ.get('PORT', 80))
     app.run(host='0.0.0.0', port=PORT, debug=False)
 
