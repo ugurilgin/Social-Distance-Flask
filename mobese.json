@@ -1,1 +1,39 @@
-{"Sultanbeyli": {"id": "1", "name": "Sultanbeyli", "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_sultanbeyli_meydan.stream/playlist.m3u8", "img": "#"}, "Esenler": {"id": "2", "name": "Esenler", "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_esenler_meydan.stream/playlist.m3u8", "img": "#"}, "Uskudar": {"id": "3", "name": "\u00dcsk\u00fcdar", "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_uskudar.stream/playlist.m3u8", "img": "#"}, "Zeytinburnu": {"id": "4", "name": "Zeytinburnu", "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_uskudar.stream/playlist.m3u8", "img": "#"}, "Kucukcekmece": {"id": "5", "name": "K\u00fc\u00e7\u00fck\u00e7ekmece", "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_kucukcekmece.stream/playlist.m3u8", "img": "#"}, "Ortakoy": {"id": "6", "name": "Ortak\u00f6y", "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_ortakoy.stream/playlist.m3u8", "img": "#"}}
+{
+    "Sultanbeyli": {
+        "id": "1",
+        "name": "Sultanbeyli",
+        "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_sultanbeyli_meydan.stream/playlist.m3u8",
+        "img": "assets/images/city/sultanbeyli.png"
+    },
+    "Esenler": {
+        "id": "2",
+        "name": "Esenler",
+        "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_esenler_meydan.stream/playlist.m3u8",
+        "img": "assets/images/city/esenler.png"
+    },
+    "Uskudar": {
+        "id": "3",
+        "name": "Uskudar",
+        "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_uskudar.stream/playlist.m3u8",
+        "img": "assets/images/city/uskudar.jpg"
+    },
+    "Zeytinburnu": {
+        "id": "4",
+        "name": "Zeytinburnu",
+        "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_uskudar.stream/playlist.m3u8",
+        "img": "assets/images/city/zeytinburnu.png"
+    },
+    "Kcekmece": {
+        "id": "5",
+        "name": "Kcekmece",
+        "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_kucukcekmece.stream/playlist.m3u8",
+        "img": "assets/images/city/kucukcekmece.jpg"
+        
+    },
+    "Ortakoy": {
+        "id": "6",
+        "name": "Ortakoy",
+        "link": "https://livestream.ibb.gov.tr/cam_sehir/cam_ortakoy.stream/playlist.m3u8",
+        "img": "assets/images/city/ortakoy.png"
+    }
+}

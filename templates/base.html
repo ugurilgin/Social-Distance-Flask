@@ -40,7 +40,7 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                        
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="{{url_for('index')}}">
                             
                             <img src="{{ url_for('static', filename='assets/images/logo-2.png') }} " alt="Logo">
                         </a>
@@ -53,13 +53,18 @@
 
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo" style="align-items:right;">
                             <ul class="navbar-nav " style="align-items:right;">
-                                <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#services">Coronavirus</a></li>
+                                {% if color %} 
+                                <li class="nav-item active"><a style="color: rgb(2, 2, 2);"  class="page-scroll" href="{{url_for('index')}}#home">Home</a></li>
+                                <li class="nav-item"><a  style="color: rgb(2, 2, 2);"  class="page-scroll" href="{{url_for('index')}}#services">Coronavirus</a></li>
+                                {% else %}
+                                <li class="nav-item active"><a   class="page-scroll" href="{{url_for('index')}}#home">Home</a></li>
+                                <li class="nav-item"><a    class="page-scroll" href="{{url_for('index')}}#services">Coronavirus</a></li>
+                                {% endif %}
                             </ul>
                         </div>
                          <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                                <li><a class="solid" href="#">Watch Mobese</a></li>
+                                <li><a class="solid" href="{{url_for('city')}}">Watch Mobese</a></li>
                             </ul>
                         </div>
                        
