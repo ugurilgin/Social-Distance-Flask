@@ -58,12 +58,12 @@ class SocialDistance:
 			
 			text ="Social Distancing Violations: {}".format(len(self.violate))
 			cv2.putText(self.frame,text,(10,self.frame.shape[0]-25),cv2.FONT_HERSHEY_SIMPLEX,0.85,(0,0,255),3)
-			cv2.imshow("Frame",self.frame)
-			a,jpeg=cv2.imencode('.jpg',self.frame)
-			print(jpeg.tobytes())
-         
-			if cv2.waitKey(1) & 0xFF==ord('q'):
-				break
+			
+			
+			test = cv2.imencode('.jpg', self.frame)[1].tobytes()
+			yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + test + b'\r\n')
+	
+			
 	def save(self):
 		cv2.imwrite("test.png",self.frame)
   

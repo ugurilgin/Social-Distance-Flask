@@ -1,7 +1,7 @@
 from SocialDistanceDetector import SocialDistance
 import json
 from flask import Flask
-from flask import request ,jsonify
+from flask import request ,jsonify,Response
 from flask import render_template,redirect,url_for
 import os
 import json
@@ -39,8 +39,22 @@ def detectCity(city):
                 cities.append(rows)
     else:
         return redirect(url_for('city'))
-    return render_template("detectCity.html",cities=cities,cityname=cityname,color="color",imglink=cityimg)
+    return render_template("detectCity.html",cities=cities,cityname=cityname,color="color",imglink=cityimg,link=link)
     file.close()
-
+@app.route('/streamVideo' ,defaults={'video':'default'})
+@app.route('/streamVideo/<video>')
+def streamVideo(video):
+    file = open('mobese.json',) 
+    data = json.load(file)
+    header=["Sultanbeyli","Esenler","Uskudar","Zeytinburnu","Kcekmece","Ortakoy"]
+    if video in header:
+        link=data[video]["link"]
+        socialDistance=SocialDistance(link)
+    else:
+        return redirect(url_for('city'))
+    return Response(socialDistance.Detect(), mimetype='multipart/x-mixed-replace; boundary=frame')
+@app.errorhandler(404)
+def page_not_found(e):
+    return redirect(url_for('index'))
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port='5000')
