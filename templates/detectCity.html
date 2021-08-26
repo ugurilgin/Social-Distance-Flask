@@ -31,7 +31,7 @@
                     </div>
                   </div>
                 {% for city in cities %}
-                <div class="carousel-item " style="background-color: white;">
+                <a   href="/detectCity/{{city[1]}}"><div class="carousel-item " style="background-color: white;"></a>
                     <a   href="/detectCity/{{city[1]}}"> <img  src="{{ url_for('static', filename=city[3]) }} "  ></a>
                     <div class="carousel-caption d-none d-md-block">
                       
